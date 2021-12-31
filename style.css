@@ -92,6 +92,11 @@ header {
     margin: 12px;
 }
 
+.item-description {
+    margin-top: 4px;
+    color: #cccccc
+}
+
 .item-head {
     display: flex;
     align-items: flex-end;
