@@ -42,6 +42,15 @@ header {
     cursor: pointer;
 }
 
+
+.head-link.selected {
+    background-color: #484848;
+}
+
+.head-link.selected:hover {
+    filter:brightness(100%);
+}
+
 #menu-content {
     background-color: #121212;
     flex-shrink: 0;
@@ -117,11 +126,11 @@ header {
     width: 100%;
 }
 
-#body-content {
+#home-content {
     position: relative;
 }
 
-#text-one {
+#home-text {
     position: absolute;
     background-color: #363636da;
     padding: 10px;
@@ -139,6 +148,7 @@ header {
     grid-column: 1;
     object-fit: cover;
 }
+
 
 footer {
     display: flex;
