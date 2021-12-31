@@ -12,11 +12,12 @@ export default function loadHeader() {
     headerLinks.setAttribute('id', 'header-bar')
 
     // Hold header link names.
-    const headerNames = ['Menu', 'Our Story', 'Contact']
+    const headerNames = ['menu', 'contact']
     // Appends links to headerLinks. Does not get appended to mainHeader.
     headerNames.forEach(name => {
         let link = document.createElement('a')
-        link.innerText = name
+        link.innerText = name.charAt(0).toUpperCase() + name.slice(1)
+        link.setAttribute('id', name)
         link.classList.add('head-link')
         headerLinks.appendChild(link)
     })

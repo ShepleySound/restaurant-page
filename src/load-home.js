@@ -13,7 +13,7 @@ export default function loadHome() {
     const bigText = document.createElement('h2')
     bigText.innerText = 'Find your inner Mystic'
     const smallText = document.createElement('p')
-    smallText.innerText = 'Eu mi bibendum neque egestas congue quisque.<br>Arcu felis bibendum ut tristique et egestas.'
+    smallText.innerText = 'Eu mi bibendum neque egestas congue quisque. Arcu felis bibendum ut tristique et egestas.'
     homeText.append(bigText, smallText)
 
     content.append(homeImage, homeText)
