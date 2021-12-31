@@ -1,0 +1,73 @@
+@font-face {
+    font-family: "Garet Book";
+    src: url("../src/Garet-Book.otf") format("OpenType");
+}
+
+body {
+    background-color: #363636;
+    color: white;
+    margin: 0;
+    font-family: "Garet Book";
+}
+
+#content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+#header-bar {
+    display: flex;
+    align-items: center;
+    background-color: #242424;
+    margin-left: auto;
+    height: 3em;
+}
+
+.head-link {
+    font-size: 1.2em;
+    margin: 12px;
+}
+
+.order-button {
+    background-color: #2b949438;
+    padding: 8px;
+}
+
+#logo {
+    width: 200px;
+    height: 200px;
+}
+
+#bar-img {
+    width: 100%;
+}
+
+#body-content {
+    position: relative;
+    text-align: center;
+}
+
+#text-one {
+    position: absolute;
+    background-color: #36363677;
+    padding: 20px;
+    top: 1em;
+    left: 10%;
+}
+
+
+#beer-img {
+    opacity: 3%;
+    position: absolute;
+    width: 100%;
+    grid-row: 1;
+    grid-column: 1;
+    object-fit: cover;
+}
