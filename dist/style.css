@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #363636;
+    background-color: #242424;
     color: white;
     margin: 0;
     font-family: "Garet Book";
@@ -13,7 +13,8 @@ body {
 #content {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 100vw;
+    height: 100vh;
     margin: 0;
 }
 
@@ -25,24 +26,91 @@ header {
 #header-bar {
     display: flex;
     align-items: center;
-    background-color: #242424;
     margin-left: auto;
     height: 3em;
 }
 
 .head-link {
     font-size: 1.2em;
+    box-sizing: border-box;
+    padding: 12px 24px;
+}
+
+.head-link:hover {
+    background-color: #242424;
+    filter: brightness(110%);
+    cursor: pointer;
+}
+
+#menu-content {
+    background-color: #121212;
+    flex-shrink: 0;
+    width: 600px;
+    height: 100%;
+    align-self: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 2px;
+}
+
+.category-title {
+    padding: 8px;
+    margin: 0;
+    background-color: #121212;
+}
+
+.menu-category {
+    display: flex;
+    flex-direction: column;
+    background-color: #363636;
+}
+
+#cat-drafts {
+    grid-column: 1;
+}
+
+#cat-ciders {
+    grid-column: 1;
+}
+
+#cat-food {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+}
+
+.menu-item {
     margin: 12px;
 }
 
-.order-button {
-    background-color: #2b949438;
-    padding: 8px;
+.item-head {
+    display: flex;
+    align-items: flex-end;
+}
+
+.item-title {
+    margin-right: auto;
+}
+
+.item-price {
+    margin-left: auto;;
+    font-size: .9em;
+}
+
+.item-description {
+    font-size: .8em;
 }
 
 #logo {
     width: 200px;
     height: 200px;
+    margin: 12px;
+    filter: brightness(150%);
+}
+
+#logo:hover {
+    filter:brightness(152%);
+    cursor: pointer;
 }
 
 #bar-img {
@@ -51,23 +119,32 @@ header {
 
 #body-content {
     position: relative;
-    text-align: center;
 }
 
 #text-one {
     position: absolute;
-    background-color: #36363677;
-    padding: 20px;
+    background-color: #363636da;
+    padding: 10px;
     top: 1em;
-    left: 10%;
+    left: 2%;
 }
 
 
 #beer-img {
     opacity: 3%;
     position: absolute;
-    width: 100%;
+    z-index: -1;
+    width: 100vw;
     grid-row: 1;
     grid-column: 1;
     object-fit: cover;
+}
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 4em;
+    flex-shrink: 0;
+    margin-top: auto;
 }
