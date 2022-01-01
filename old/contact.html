@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Homepage</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="content">
+        <header>
+            <img id="logo" src="../src/mystic-logo-nobkg.png" alt="Mystic Brewery Logo">
+            <div id="header-bar">
+                <a class="head-link">Menu</a>
+                <a class="head-link">Our Story</a>
+                <a class="head-link">Contact</a>
+            </div>
+            <img id="beer-img" src="../src/beer-img.jpg" alt="">
+        </header>
+        <div id="contact-content">
+            <form action="javascript:void(0);" id="contact-form">
+                <label for="fname">First Name</label>
+                <input type="text" name="firstname" id="fname">
+
+                <label for="lname">Last Name</label>
+                <input type="text" name="lastname" id="lname">
+
+                <label for="email">Email</label>
+                <input type="text" name="email" id="email">
+
+                <label for="subject">Subject</label>
+                <input type="text" name="subject" id="subject">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="message" style="height:200px"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+        <footer>
+            <a id="copyright">Robert Shepley 2021</a>
+        </footer>
+    </div>
+</body>
+</html>
