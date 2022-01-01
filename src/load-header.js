@@ -4,9 +4,12 @@ import backgroundImage from './beer-img.jpg'
 export default function loadHeader() {
     const mainHeader = document.createElement('header')
 
+    const headerLink = document.createElement('a')
+    headerLink.setAttribute('href', './home.html')
     const headerLogo = new Image()
     headerLogo.src = barLogo
     headerLogo.setAttribute('id', 'logo')
+    headerLink.append(headerLogo)
 
     const headerLinks = document.createElement('div')
     headerLinks.setAttribute('id', 'header-bar')
@@ -18,6 +21,7 @@ export default function loadHeader() {
         let link = document.createElement('a')
         link.innerText = name.charAt(0).toUpperCase() + name.slice(1)
         link.setAttribute('id', name)
+        link.setAttribute('href', `./${name}.html`)
         link.classList.add('head-link')
         headerLinks.appendChild(link)
     })
@@ -26,6 +30,6 @@ export default function loadHeader() {
     pageBackground.src = backgroundImage
     pageBackground.setAttribute('id', 'beer-img')
 
-    mainHeader.append(headerLogo, headerLinks, pageBackground)
+    mainHeader.append(headerLink, headerLinks, pageBackground)
     return mainHeader
 }
