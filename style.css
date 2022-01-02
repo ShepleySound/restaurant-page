@@ -8,27 +8,48 @@ body {
     color: white;
     margin: 0;
     font-family: "Garet Book";
+    display: flex;
+    justify-content: center;
 }
 
 #content {
     display: flex;
     flex-direction: column;
-    width: 100vw;
+    width: 1200px;
+    max-width: 100%;
     height: 100vh;
-    margin: 0;
+    margin: auto;
 }
+
+/* HEADER STYLING */
 
 header {
     display: flex;
     align-items: center;
+
+    flex-wrap: wrap;
+}
+
+#logo {
+    width: 200px;
+    max-width: 40vw;
+    margin: 12px;
+    filter: brightness(150%);
+}
+
+#logo:hover {
+    filter:brightness(152%);
+    cursor: pointer;
 }
 
 #header-bar {
     display: flex;
+    margin: 12px;
     align-items: center;
     margin-left: auto;
     height: 3em;
 }
+
 
 .head-link {
     font-size: 1.2em;
@@ -53,10 +74,41 @@ header {
     filter:brightness(100%);
 }
 
+#beer-img {
+    opacity: 3%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100vw;
+    object-fit: cover;
+}
+
+/* HOME STYLING */
+
+#home-content {
+    position: relative;
+}
+
+#home-text {
+    position: absolute;
+    background-color: #363636da;
+    padding: 10px;
+    top: 1em;
+    left: 2%;
+}
+
+#bar-img {
+    width: 100%;
+}
+
+/* MENU STYLING */
+
 #menu-content {
     background-color: #121212;
     flex-shrink: 0;
     width: 600px;
+    max-width: 100%;
     height: 100%;
     align-self: center;
     display: grid;
@@ -117,60 +169,12 @@ header {
     font-size: .8em;
 }
 
-#logo {
-    width: 200px;
-    height: 200px;
-    margin: 12px;
-    filter: brightness(150%);
-}
-
-#logo:hover {
-    filter:brightness(152%);
-    cursor: pointer;
-}
-
-#bar-img {
-    width: 100%;
-}
-
-#home-content {
-    position: relative;
-}
-
-#home-text {
-    position: absolute;
-    background-color: #363636da;
-    padding: 10px;
-    top: 1em;
-    left: 2%;
-}
-
-
-#beer-img {
-    opacity: 3%;
-    position: absolute;
-    z-index: -1;
-    width: 100vw;
-    grid-row: 1;
-    grid-column: 1;
-    object-fit: cover;
-}
-
-
-footer {
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
-    height: 4em;
-    flex-shrink: 0;
-    margin-top: auto;
-}
-
 /* CONTACT FORM STYLING */
 
 #contact-content{
+    width: 600px;
+    max-width: 100%;
     align-self: center;
-    width: 80%;
 }
 
 #contact-form {
@@ -180,6 +184,7 @@ footer {
     display: flex;
     flex-direction: column;
     color: #ddd;
+    max-width: 600px;
 }
 
 input[type=text], textarea {
@@ -206,6 +211,17 @@ input[type=submit] {
 
 input[type=submit]:hover {
     filter:brightness(120%)
+}
+
+/* FOOTER STYLING */
+
+footer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 4em;
+    flex-shrink: 0;
+    margin-top: auto;
 }
 
 /* SUBMIT MODAL STYLING */
