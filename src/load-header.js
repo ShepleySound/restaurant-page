@@ -5,7 +5,7 @@ export default function loadHeader() {
     const mainHeader = document.createElement('header')
 
     const headerLink = document.createElement('a')
-    headerLink.setAttribute('href', './home.html')
+    headerLink.setAttribute('href', './index.html')
     const headerLogo = new Image()
     headerLogo.src = barLogo
     headerLogo.setAttribute('id', 'logo')
