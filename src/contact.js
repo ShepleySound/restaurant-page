@@ -6,3 +6,6 @@ const content = document.querySelector('#content')
 content.appendChild(loadHeader())
 content.appendChild(loadContact())
 content.appendChild(loadFooter())
+
+const contactButton = document.querySelector('#contact')
+contactButton.classList.add('selected')

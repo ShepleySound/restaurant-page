@@ -9,6 +9,7 @@ export default function loadHeader() {
     const headerLogo = new Image()
     headerLogo.src = barLogo
     headerLogo.setAttribute('id', 'logo')
+    headerLink.setAttribute('id', 'logo-link')
     headerLink.append(headerLogo)
 
     const headerLinks = document.createElement('div')
